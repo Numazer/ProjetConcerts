@@ -70,11 +70,12 @@
         .card {
             background-color: rgba(255, 255, 255, 0.1);
             border: none;
-            transition: transform 0.3s ease-in-out;
+            /* transition: transform 0.3s ease-in-out; */
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
         }
-        .card:hover {
-            transform: scale(1.05);
-        }
+        /* .card:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        } */
         .about-card {
             background-color: rgba(255, 255, 255, 0.2);
             /* border: 2px solid #ffc107; */
@@ -128,6 +129,11 @@
                padding: 1rem;
             border-radius: 10px;
             background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .artistes2-section {
+            height: 100vh;
+            width: 50%;
         }
         
     </style>
@@ -252,6 +258,35 @@
                 </div> -->
             </div>
         </div>
+    </section>
+
+    <section id="artistes2" class="py-5 artistes2-section" >
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/images/2024-11_Cello82_©Gilles Arbwick_HD_021.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/2024-11_Raphael Pidoux_©Gilles Arbwick_HD_004.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/Guillaume_Bellom_JBMillot.JPG" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </section>
 
 

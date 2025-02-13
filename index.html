@@ -51,6 +51,7 @@
         .info-card {
             background-color: rgba(255, 255, 255, 0.1);
             transition: background-color 0.3s ease-in-out;
+            min-height: 250px; /* Ajustez la hauteur minimale selon votre besoin */
         }
         .info-card:hover {
             background-color: rgba(255, 255, 255, 0.2);
@@ -92,10 +93,10 @@
             padding: 2rem;
             transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
         }
-        .type-card:hover {
+        /* .type-card:hover {
             background-color: rgba(255, 255, 255, 0.2);
             transform: scale(1.05);
-        }
+        } */
         .type-card i {
             font-size: 3rem;
             margin-bottom: 1rem;
@@ -107,12 +108,13 @@
             border-radius: 10px;
             transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
             color: #ffffff;
+            min-height: 150px; /* Ajustez la hauteur minimale selon votre besoin */
         }
-
+/* 
         .programmation-card:hover {
             background-color: rgba(255, 255, 255, 0.2);
             transform: scale(1.05);
-        }
+        } */
 
         .artistes-section {
                /* border: 2px solid #ffc107; */
@@ -128,9 +130,6 @@
             background-color: rgba(255, 255, 255, 0.1);
         }
         
-        .types-section {
-            background-color: #ffc107;
-        }
     </style>
 </head>
 <body>
@@ -196,31 +195,31 @@
         <!-- <hr class="hr-blurry" /> -->
         <div class="container text-center">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-3 mb-4">
+                <div class="col-12 col-md-4 mb-4">
                     <div class="type-card">
                         <i class="fas fa-music"></i>
                         <h4>Concerts</h4>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 mb-4">
+                <div class="col-12 col-md-4 mb-4">
                     <div class="type-card">
                         <i class="fas fa-theater-masks"></i>
                         <h4>Animations</h4>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 mb-4">
+                <div class="col-12 col-md-4 mb-4">
                     <div class="type-card">
                         <i class="fas fa-tools"></i>
                         <h4>Ateliers</h4>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 mb-4">
+                <div class="col-12 col-md-4 mb-4">
                     <div class="type-card">
                         <i class="fas fa-utensils"></i>
                         <h4>Food</h4>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 mb-4">
+                <div class="col-12 col-md-4 mb-4">
                     <div class="type-card">
                         <i class="fas fa-users"></i>
                         <h4>Chorales</h4>
@@ -245,12 +244,12 @@
                 <div class="col-12 col-md-4 mb-4">
                     <img class="img-fluid rounded-3" src="/images/Richard Galliano_C_Pieroni_S_Braem.jpg" alt="Richard Galliano">
                 </div>
-                <div class="col-12 col-md-4 mb-4">
+                <!-- <div class="col-12 col-md-4 mb-4">
                     <img class="img-fluid rounded-3" src="/images/2024-11_Raphael Pidoux_©Gilles Arbwick_HD_004.jpg" alt="Richard Galliano">
                 </div>
                 <div class="col-12 col-md-4 mb-4">
                     <img class="img-fluid rounded-3" src="/images/Guillaume_Bellom_JBMillot.JPG" alt="Richard Galliano">
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -300,38 +299,39 @@
         </div>
     </section>
 
-    <!-- Infos Section -->
-    <section id="infos" class="py-5">
-        <div class="container">
-            <h2 class="section-title text-center">Informations pratiques</h2>
-            <div class="row justify-content-center mt-4">
-                <div class="col-md-4 mb-4">
-                    <div class="info-card p-4 rounded-3">
-                        <h4>Infos</h4>
-                        <p>Place Guillaume Nogaret, 31540 - Saint-Felix-Lauragais</p>
-                        <p>Stade municipal, École de Saint-Felix</p>
-                        <p>Lien site vente billet</p>
-                    </div>
+  <!-- Infos Section -->
+<section id="infos" class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center">Informations pratiques</h2>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-4 mb-4">
+                <div class="info-card p-4 rounded-3">
+                    <h4><i class="fas fa-location-pin"></i> Infos</h4>
+                    <p>Place Guillaume Nogaret, 31540 - Saint-Felix-Lauragais</p>
+                    <p>Stade municipal, École de Saint-Felix</p>
+                    <p><a href="#">Lien site vente billet</a></p>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="info-card p-4 rounded-3">
-                        <h4>Horaires</h4>
-                        <p>Du 12 au 14 juin 2025</p>
-                        <p>Street-food à partir de 18h</p>
-                        <p>Buvette à partir de 18h</p>
-                    </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="info-card p-4 rounded-3">
+                    <h4><i class="fas fa-clock"></i> Horaires</h4>
+                    <p>Du 12 au 14 juin 2025</p>
+                    <p>Street-food à partir de 18h</p>
+                    <p>Buvette à partir de 18h</p>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="info-card p-4 rounded-3">
-                        <h4>Contacts</h4>
-                        <p>Asso 1: tel / mail</p>
-                        <p>Asso 2: tel / mail</p>
-                        <p>Asso 3: tel / mail</p>
-                    </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="info-card p-4 rounded-3">
+                    <h4><i class="fas fa-phone"></i> Contacts</h4>
+                    <p>Asso 1: tel / mail</p>
+                    <p>Asso 2: tel / mail</p>
+                    <p>Asso 3: tel / mail</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <footer class="py-4 text-center text-white">
         <!-- Footer content -->

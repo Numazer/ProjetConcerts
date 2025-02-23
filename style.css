@@ -136,3 +136,15 @@ font-family: 'Montserrat', sans-serif;
     width: 50%;
 }
 
+@media (max-width: 768px) {
+    #accueil img {
+        width: 100vw; /* Force l'image à couvrir toute la largeur de l'écran */
+        height: 100vh; /* Force l'image à couvrir toute la hauteur de l'écran */
+        object-fit: cover; /* Assure que l'image couvre l'espace sans déformation */
+    }
+
+    /* Si nécessaire, vous pouvez aussi ajuster l'élément texte pour qu'il reste centré */
+    #accueil .position-absolute {
+        height: 100vh; /* S'assurer que le div de contenu occupe toute la hauteur */
+    }
+}

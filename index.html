@@ -15,7 +15,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #0397d3;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Logo</a>
+            <!-- <a class="navbar-brand" href="#">Logo</a> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -52,7 +52,9 @@
                 <h1 class="display-4">Musique<span style="color: red;">(s)</span></h1>
                 <h2>à Saint-Felix</h2>
                 <h2 class="lead">Un festival de musique au coeur de la Haute-Garonne</h2>
-                <button id="resbtn" class="btn btn-primary mt-4">Réserver</button>
+                <a href="http://www.billetterie.festik.net/musiques-a-saint-felix-lauragais">
+                    <button id="resbtn" class="btn btn-primary mt-4">Réserver</button>
+                </a>
             </div>
         </div>
     </header>
@@ -60,15 +62,15 @@
     <!-- About Section -->
     <section id="about" class="py-5 about-section">
         <div class="container text-center">
-            <h2 class="section-title" >Un festival de musique classique inédit en Haute-Garonne</h2>
-            <p class="mt-4" style="font-size: 20px;">Un événement à forte notoriété qui propose en milieu rural des virtuoses habituellement réservés aux grandes villes. La programmation classique, contemporaine, rythmée et le choix des pièces et des morceaux couvrent plusieurs styles musicaux accessibles pour tout public.</p>
+            <h2 class="section-title">Un festival de musique inédit en Haute-Garonne</h2>
+            <p class="mt-4" style="font-size: 20px;">Des artistes exceptionnels se produisent en plein cœur du village de Saint-Félix-Lauragais. Une programmation classique et jazz, des pièces musicales accessibles à tout public, ainsi que des animations tournées vers le jeune public (chorales, ensembles de musique à cordes, etc...).</progress></p>
         </div>
         <div class="container d-flex flex-wrap justify-content-center mt-5">
             <div class="about-card m-2">
-                <h4>Saint-Felix de Lauragais</h4>
+                <h4>Saint-Felix-Lauragais</h4>
             </div>
             <div class="about-card m-2">
-                <h4>Du 12 au 14 juin 2025</h4>
+                <h4>12-13-14 juin 2025</h4>
             </div>
         </div>
     </section>
@@ -170,46 +172,71 @@
 <!-- Programmation Section -->
 <section id="programmation" class="py-5 programmation-section">
     <div class="container">
-        <h2 class="section-title text-center">Programmation</h2>
+        <h2 class="section-title text-center text-white">Programmation</h2>
         <div class="row justify-content-center">
-            <div class="col-md-4 mb-4">
+            <!-- Première carte (12 Juin) -->
+            <div class="col-md-6 mb-4">
                 <div class="card text-center p-4 programmation-card">
-                    <h4>12 Juin</h4>
-                    <h5>Renaud Capuçon</h5>
-                    <h5>Guillaume Bellom</h5>
+                    <h4 class="event-date">12 Juin</h4>
+                    <h5 class="event-hour">à 21h</h5>
+                    <p class="event-artists">Renaud Capuçon (violon) & Guillaume Bellom (piano)</p>
+                    <p class="event-description">Un duo exceptionnel de musique classique pour une soirée mémorable.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+
+            <!-- Deuxième carte (13 Juin) -->
+            <div class="col-md-6 mb-4">
                 <div class="card text-center p-4 programmation-card">
-                    <h4>13 Juin</h4>
-                    <h5>Cello8</h5>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card text-center p-4 programmation-card">
-                    <h4>14 Juin</h4>
-                    <h5>Richard Galliano</h5>
+                    <h4 class="event-date">13 Juin</h4>
+                    <h5 class="event-hour">à 21h</h5>
+                    <p class="event-artists">Raphaël Pidoux et Cello8 (violoncelles)</p>
+                    <p class="event-description">Un concert pour célébrer la richesse du répertoire de musique pour violoncelle.</p>
                 </div>
             </div>
         </div>
+
+        <!-- Troisième carte (14 Juin) -->
+        <div class="row justify-content-center">
+            <div class="col-md-12 mb-4">
+                <div class="card text-center p-4 programmation-card">
+                    <h4 class="event-date">14 Juin</h4>
+                    <h5 class="event-hour">Dès 14h</h5>
+                    <p class="event-artists">Formations à cordes & Lutier</p>
+                    <p class="event-description">Venez découvrir les secrets de l'artisanat des instruments à cordes et les performances des musiciens.</p>
+                    
+                    <h5 class="event-hour">à 17h</h5>
+                    <p class="event-artists">Chorale Piccolo (5€)</p>
+                    <p class="event-description">Un concert de chorale pour toute la famille, avec des prix accessibles.</p>
+                    
+                    <h5 class="event-hour">à 21h</h5>
+                    <p class="event-artists">Richard Galliano (accordéon)</p>
+                    <p class="event-description">Un concert unique de jazz et musique classique autour de l'accordéon.</p>
+                </div>
+            </div>
+        </div>
+
         <div class="text-center mt-4">
-            <button class="btn btn-primary" style="background-color: black; padding:2.5%">Réserver mon billet</button>
+            <a href="http://www.billetterie.festik.net/musiques-a-saint-felix-lauragais">
+                <button class="btn btn-primary" style="background-color: black; padding: 2.5%">Réserver mon billet</button>
+            </a>
         </div>
     </div>
 </section>
 
+
+
     <!-- Associations Section -->
-    <section id="assos" class="py-5 assos-section">
-        <div class="container">
-            <h2 class="section-title text-center">Le village, le cadre et le terroir</h2>
-            <p style="font-size: 20px;">La cour du château de Saint Félix accueillera les trois concerts moyennant une billetterie et la Halle du village (samedi) l’après-midi gratuit de vulgarisation et de découverte. Les violoncellistes de Cello8 animeront l'après-midi et les artisans partageront leur passion. Ce seront des moments d'échanges et la possibilité d'approcher des artistes virtuoses, des instruments construits par des luthiers d'exception. Nous nous appliquerons à faciliter l’accès à tous et donc aux personnes présentant une mobilité réduite. La programmation de MUSIQUE’(s) à Saint Félix permet de toucher l'ensemble du territoire Lauragais, Haute Garonne, Aude, Tarn... Nous favoriserons les intervenants régionaux sans rien sacrifier à la qualité qui nous permettra de poser les bases solides d'une pérennisation souhaitée. Nous voulons que le village de Saint Félix rayonne sur le territoire régional par la qualité de la proposition.</p>
-            <div class="d-flex justify-content-center mt-4">
-                <div class="p-3">Asso1</div>
-                <div class="p-3">Asso2</div>
-                <div class="p-3">Asso3</div>
-            </div>
+<section id="assos" class="py-5 assos-section">
+    <div class="container">
+        <h2 class="section-title text-center">Le village, le cadre et le terroir</h2>
+        <p style="font-size: 20px;">La cour du château de Saint Félix accueillera les trois concerts moyennant une billetterie et la Halle du village (samedi) l’après-midi gratuit de vulgarisation et de découverte. Les violoncellistes de Cello8 animeront l'après-midi et les artisans partageront leur passion. Ce seront des moments d'échanges et la possibilité d'approcher des artistes virtuoses, des instruments construits par des luthiers d'exception. Nous nous appliquerons à faciliter l’accès à tous et donc aux personnes présentant une mobilité réduite. La programmation de MUSIQUE’(s) à Saint Félix permet de toucher l'ensemble du territoire Lauragais, Haute Garonne, Aude, Tarn... Nous favoriserons les intervenants régionaux sans rien sacrifier à la qualité qui nous permettra de poser les bases solides d'une pérennisation souhaitée. Nous voulons que le village de Saint Félix rayonne sur le territoire régional par la qualité de la proposition.</p>
+        <div class="d-flex justify-content-center mt-4">
+            <div class="p-3">Asso1</div>
+            <div class="p-3">Asso2</div>
+            <div class="p-3">Asso3</div>
         </div>
-    </section>
+    </div>
+</section>
 
   <!-- Infos Section -->
 <section id="infos" class="py-5">

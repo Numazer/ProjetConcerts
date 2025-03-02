@@ -166,7 +166,7 @@ font-family: 'Montserrat', sans-serif;
     padding: 20px;
     transition: transform 0.3s ease, background-color 0.3s ease;
     color: #fff;
-    min-height: 300px; /* Assurez-vous que toutes les cartes aient la même hauteur */
+    min-height: 200px; /* Assurez-vous que toutes les cartes aient la même hauteur */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -191,7 +191,7 @@ font-family: 'Montserrat', sans-serif;
 .event-artists {
     font-size: 1.1rem;
     margin-top: 10px;
-    font-weight: bold;
+    font-weight: bold !important;
 }
 
 .event-description {
@@ -204,4 +204,9 @@ font-family: 'Montserrat', sans-serif;
     .programmation-card {
         margin: 15px 0;
     }
+}
+
+.raphael-pidoux {
+    font-size: 1.2em; /* Augmente légèrement la taille de la police */
+    font-weight: bold !important;
 }

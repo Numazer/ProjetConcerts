@@ -240,5 +240,20 @@ body {
 #resbtn {
     background-color: rgb(0, 0, 0);
     border: none;
-    padding: 5%;
+    padding: 5%; /* Garde ton padding pour avoir de l'espace autour du texte */
+    color: white;
+    font-size: 1rem; /* Taille de texte par défaut */
+    white-space: nowrap; /* Empêche le texte de se couper sur plusieurs lignes */
+    text-overflow: ellipsis; /* Ajoute des points de suspension si le texte est trop long */
+    overflow: hidden; /* Cache le texte qui dépasse */
+}
+
+/* Pour les petits écrans (mobile) */
+@media (max-width: 768px) {
+    #resbtn {
+        font-size: 0.9rem; /* Réduit la taille du texte pour les petits écrans */
+        padding: 8px 16px; /* Ajuste un peu le padding sur mobile pour que le texte reste dans le cadre */
+        width: 100%; /* Le bouton prend toute la largeur de son conteneur */
+        box-sizing: border-box; /* Pour inclure le padding dans la largeur totale */
+    }
 }

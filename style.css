@@ -240,20 +240,21 @@ body {
 #resbtn {
     background-color: rgb(0, 0, 0);
     border: none;
-    padding: 5%; /* Garde ton padding pour avoir de l'espace autour du texte */
+    padding: 5%;
     color: white;
-    font-size: 1rem; /* Taille de texte par défaut */
-    white-space: nowrap; /* Empêche le texte de se couper sur plusieurs lignes */
-    text-overflow: ellipsis; /* Ajoute des points de suspension si le texte est trop long */
+    font-size: 1rem;
+    white-space: nowrap; /* Empêche le texte de se couper */
+    text-overflow: ellipsis; /* Points de suspension si texte trop long */
     overflow: hidden; /* Cache le texte qui dépasse */
+    display: inline-block; /* Assure que le bouton ne prend pas toute la largeur */
+    margin: 0 auto; /* Centrage horizontal */
 }
 
 /* Pour les petits écrans (mobile) */
 @media (max-width: 768px) {
     #resbtn {
-        font-size: 0.9rem; /* Réduit la taille du texte pour les petits écrans */
-        padding: 8px 16px; /* Ajuste un peu le padding sur mobile pour que le texte reste dans le cadre */
-        width: 100%; /* Le bouton prend toute la largeur de son conteneur */
-        box-sizing: border-box; /* Pour inclure le padding dans la largeur totale */
+        font-size: 0.9rem; /* Taille du texte réduite pour mobile */
+        padding: 8px 16px; /* Ajuste un peu le padding pour mieux gérer l'espace */
+        width: auto; /* Ne pas forcer la largeur à 100% */
     }
 }

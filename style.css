@@ -1,16 +1,4 @@
-
-#artistes2 {
-    width: 100%;
-    height: 200px;
-}
-
-
-#resbtn {
-    background-color: rgb(0, 0, 0);
-    border: none;
-    padding: 5%;
-} 
-
+/* Global Styles */
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #0397d3;
@@ -18,27 +6,37 @@ body {
 }
 
 .nav-item {
-margin-right: 20px; /* Espace à droite de chaque élément */
-font-family: 'Montserrat', sans-serif;
+    margin-right: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
+
 .navbar-brand, .nav-link {
     color: white !important;
     font-family: 'Montserrat', sans-serif;
 }
+
 .nav-link:hover {
     color: #ffc107 !important;
-    font-size: 1.25rem; /* Augmentation de la taille du texte */
+    font-size: 1.25rem;
 }
+
+/* Hero Section */
 .hero {
     transition: background-size 0.5s ease-in-out;
 }
+
 .hero:hover {
     background-size: 110%;
 }
+
+/* Section Titles */
 .section-title {
     position: relative;
     margin-bottom: 3rem;
+    font-size: 2rem;
+    color: #fff;
 }
+
 .section-title::after {
     content: '';
     position: absolute;
@@ -49,52 +47,35 @@ font-family: 'Montserrat', sans-serif;
     background: #ffc107;
     transform: translateX(-50%);
 }
-.info-card {
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: background-color 0.3s ease-in-out;
-    min-height: 250px; /* Ajustez la hauteur minimale selon votre besoin */
-}
-.info-card:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-.assos-section {
-    /* border: 2px solid #ffc107; */
-    padding: 1rem;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-}
-/* .programmation-section {
-    margin: 0 auto;
-    padding: 0;
-    max-width: 1200px;
-}  */
-.card {
+
+/* Card Styles */
+.card, .info-card, .programmation-card, .type-card, .about-card {
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
-    /* transition: transform 0.3s ease-in-out; */
+    border-radius: 10px;
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-/* .card:hover {
+
+.card:hover, .programmation-card:hover, .about-card:hover, .type-card:hover {
     background-color: rgba(255, 255, 255, 0.2);
-} */
+}
+
+.card {
+    min-height: 250px;
+}
+
+.info-card {
+    min-height: 250px;
+}
+
 .about-card {
     background-color: rgba(255, 255, 255, 0.2);
-    /* border: 2px solid #ffc107; */
-    border-radius: 10px;
     padding: 2rem;
-    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-.about-card:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    /* transform: scale(1.05); */
-}
+
 .type-card {
-    background-color: rgba(255, 255, 255, 0.1);
     border: 2px solid #ffc107;
-    border-radius: 10px;
     padding: 2rem;
-    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-    /* width: 85%; */
 }
 
 .type-card i {
@@ -102,125 +83,62 @@ font-family: 'Montserrat', sans-serif;
     margin-bottom: 1rem;
 }
 
+/* Sections */
+.assos-section, .artistes-section, .about-section, .programmation-section {
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
 
-
-    /* 
-.programmation-card:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    transform: scale(1.05);
-} */
-
+/* Artists Section */
 .artistes-section {
-       /* border: 2px solid #ffc107; */
-       padding: 1rem;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.about-section {
-       /* border: 2px solid #ffc107; */
-       padding: 1rem;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.artistes2-section {
-    height: 100vh;
-    width: 50%;
-}
-
-@media (max-width: 768px) {
-    #accueil img {
-        width: 100vw; /* Force l'image à couvrir toute la largeur de l'écran */
-        height: 100vh; /* Force l'image à couvrir toute la hauteur de l'écran */
-        object-fit: cover; /* Assure que l'image couvre l'espace sans déformation */
-    }
-
-    /* Si nécessaire, vous pouvez aussi ajuster l'élément texte pour qu'il reste centré */
-    #accueil .position-absolute {
-        height: 100vh; /* S'assurer que le div de contenu occupe toute la hauteur */
-    }
-}
-
-.sizeText {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-
-.programmation-section {
-    /* background-color: rgba(255, 255, 255, 0.1); Couleur de fond de la section comme initialement définie */
-    padding: 60px 0;
-}
-
-.section-title {
-    font-size: 2rem;
-    color: #fff;
-    margin-bottom: 3rem;
-    position: relative;
-}
-
-.programmation-card {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    padding: 20px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    color: #fff;
-    min-height: 200px; /* Assurez-vous que toutes les cartes aient la même hauteur */
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.programmation-card:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    transform: scale(1.05);
-}
-
-.event-date {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #fff;
-}
-
-.event-hour {
-    font-size: 1.25rem;
-    color: #ffc107;
-}
-
-.event-artists {
-    font-size: 1.1rem;
-    margin-top: 10px;
-    font-weight: bold !important;
-}
-
-.event-description {
-    font-size: 1rem;
-    color: #ddd;
-    margin-top: 10px;
-}
-
-@media (max-width: 768px) {
-    .programmation-card {
-        margin: 15px 0;
-    }
-}
-
-.raphael-pidoux {
-    font-size: 1.2em; /* Augmente légèrement la taille de la police */
-    font-weight: bold !important;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
 }
 
 .artist-card {
     position: relative;
-    overflow: hidden;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    margin: 15px;
+}
+
+.card-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.artist-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px;
 }
 
-.artist-card img {
-    width: 100%;
-    height: auto;
-    display: block;
+.card-back {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
     border-radius: 10px;
 }
 
@@ -246,7 +164,81 @@ font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
 
-/* Effet au survol */
 .artist-card:hover .artist-text {
     background: rgba(0, 0, 0, 0.8);
+}
+
+/* Event Section (Programmation) */
+.programmation-section {
+    padding: 60px 0;
+}
+
+.programmation-card {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    color: #fff;
+}
+
+.programmation-card:hover {
+    transform: scale(1.05);
+}
+
+.event-date {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.event-hour {
+    font-size: 1.25rem;
+    color: #ffc107;
+}
+
+.event-artists {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.event-description {
+    font-size: 1rem;
+    color: #ddd;
+    margin-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #accueil img {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    #accueil .position-absolute {
+        height: 100vh;
+    }
+
+    .programmation-card {
+        margin: 15px 0;
+    }
+}
+
+/* Additional Styles */
+.sizeText {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#artistes2 {
+    width: 100%;
+    height: 200px;
+}
+
+#resbtn {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    padding: 5%;
 }

@@ -84,7 +84,7 @@ body {
 }
 
 /* Sections */
-.assos-section, .artistes-section, .about-section {
+.about-section, .programmation-section, .infos-section {
     padding: 1rem;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -257,4 +257,63 @@ body {
         padding: 8px 16px; /* Ajuste un peu le padding pour mieux gérer l'espace */
         width: auto; /* Ne pas forcer la largeur à 100% */
     }
+}
+
+
+
+/* Section Animations */
+.animations-section {
+    padding: 3rem 0;
+    background-color: rgba(255, 255, 255, 0.1); /* Fond similaire à celui de la programmation */
+    border-radius: 10px;
+}
+
+/* Centrer le titre */
+.animations-section .section-title {
+    text-align: center;
+}
+
+/* Assurer la même hauteur des cartes */
+.animations-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.animations-section .animations-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1); /* Fond identique à la section programmation */
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    font-size: 18px;
+}
+
+/* Effet au survol */
+.animations-section .animations-card:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Légère augmentation de l'intensité au survol */
+    transform: scale(1.05);
+}
+
+
+.animations-section .animations-card i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.animations-section .btn-outline-light {
+    border-color: #ffc107;
+    color: #ffc107;
+    padding: 8px 16px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.animations-section .btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
 }
